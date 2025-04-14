@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .col{
+            height: 300px;
+        } */
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">
+                <img src="./images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top ">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-animate" href="javascript:void(0)" onclick="history.go(-1)">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-animate" href="javascript:void(0)">
+                            <i class="fas fa-info-circle"></i> About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">Categories</button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-dark" href="category.html" >kurtis</a></li>
+                          <li><a class="dropdown-item text-dark" href="category.html">Crop Tops</a></li>
+                          <li><a class="dropdown-item text-dark" href="category.html">Saree</a></li>
+                          <li><a class="dropdown-item text-dark" href="category.html">Co-ord Sets</a></li>
+                          <li><a class="dropdown-item text-dark" href="category.html">Skirts</a></li>
+                          <li><a class="dropdown-item text-dark" href="category.html">Plazzos</a></li>
+                          <li><a class="dropdown-item text-dark" href="category.html">Jackets & Shrugs</a></li>
+                          <li><a class="dropdown-item text-dark" href="category.html">Bodycon Dresses</a></li>
+                        </ul>
+                      </div>
+                       
+                    </li>
+                  <li class="nav-item">
+                    <a type="nav-link" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">
+                      Login
+                    </a>
+                    
+                    <div class="modal fade" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                        
+                          <div class="modal-header">
+                            <h4 class="modal-title">LOGIN BOX</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                    
+                          
+                          <div class="modal-body">
+                            <form action="/action_page.php">
+                              <div class="mb-3 mt-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                              </div>
+                              <div class="mb-3">
+                                <label for="pwd" class="form-label">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                              </div>
+                              <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                </label>
+                              </div>
+                              <button type="submit" class="btn btn-success">Submit</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="text" placeholder="Search">
+                  <button class="btn btn-secondary" type="button">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    
+    <div class="container">
+        <div class="row mb-3 ">
+            <div class="col col-md-6 border border-2 border-dark"><img src="./images/c2.png" alt="" style=" height: auto; width: 100%;"> </div>
+            <div class="col col-md-6 border border-2 border-dark ">
+                <br>
+                <h1 class="text-center text-success">Tropical Shirt Women</h1>
+                <br><br>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, pariatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptate libero ab esse. Pariatur, recusandae, deleniti in ipsam sit eius debitis ipsa quam officiis, aliquid atque? Rem nam perspiciatis fuga. Id quibusdam quae maxime saepe deserunt eos placeat quasi laboriosam!
+            <br><br>
+            <h3 class="text-info">$45.00</h3>  
+            </div>
+        </div>
+    </div>
+    
+
+<footer class="bg-dark text-light text-center py-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: support@example.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123, Fashion Street, New York, USA</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Kids Wear</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Login</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light me-3"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <p class="mb-0">&copy; 2025 Fashion Hub. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="https://kit.fontawesome.com/5aef80d9ee.js" crossorigin="anonymous"></script>
+</body>
+</html>

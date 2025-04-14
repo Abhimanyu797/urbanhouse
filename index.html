@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>urbanhouse - Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f3f0;
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+    }
+
+    .navbar {
+      background-color: #4b2c20;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    .hero {
+      background-image: url('./images/coffee-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+    }
+
+    .btn-coffee {
+      background-color: #8b5e3c;
+      color: white;
+      border: none;
+    }
+
+    .btn-coffee:hover {
+      background-color: #6f472e;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 60px 0 30px;
+      color: #4b2c20;
+      font-weight: bold;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      color: #4b2c20;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      color: #4b2c20;
+      text-align: justify;
+    }
+
+    .map-container {
+      margin: 60px 0;
+    }
+
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+    .container map-container
+
+    .footer {
+      background-color: #4b2c20;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #d3c1b3;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/logo.png" alt="Coffee Haven">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div>
+      <h1>Welcome to Urbanhouse</h1>
+      <p class="lead">Brewed fresh. Served with love.</p>
+      <a href="menu.html" class="btn btn-coffee mt-3">Explore Our Menu</a>
+    </div>
+  </header>
+
+  <!-- Featured Products -->
+  <section class="container mt-5">
+    <h2 class="section-title">Featured Brews</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./images/image2.png" class="card-img-top" alt="Espresso">
+          <div class="card-body text-center">
+            <h5 class="card-title">Espresso</h5>
+            <p class="card-text text-muted">$3.00</p>
+            <a href="menu.html" class="btn btn-coffee">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./images/m6.png" class="card-img-top" alt="Latte">
+          <div class="card-body text-center">
+            <h5 class="card-title">Latte</h5>
+            <p class="card-text text-muted">$4.00</p>
+            <a href="menu.html" class="btn btn-coffee">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./images/m2.png" class="card-img-top" alt="Cappuccino">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cappuccino</h5>
+            <p class="card-text text-muted">$3.50</p>
+            <a href="menu.html" class="btn btn-coffee">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="./images/arabica coffee.png" class="card-img-top" alt="Mocha">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mocha</h5>
+            <p class="card-text text-muted">$4.50</p>
+            <a href="menu.html" class="btn btn-coffee">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container mt-5" id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./images/bc3.png" class="img-fluid rounded" alt="Coffee Shop">
+      </div>
+      <div class="col-md-6">
+        <p class="about-text">urbanhouse is your local stop for handcrafted brews, cozy ambiance, and a community atmosphere. Whether you're grabbing a quick espresso on the go or staying for a chat with friends over cappuccinos, we're here to make your day better—one cup at a time.</p>
+        <p class="about-text">We proudly serve ethically sourced beans, freshly ground and brewed to perfection by our passionate baristas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="container map-container">
+    <h2 class="section-title">Find Us Here</h2>
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.093435422639!2d-122.41941528468172!3d37.77492977975921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c84b4f7c7%3A0x8f63f1185f902d2c!2sCoffee%20Shop!5e0!3m2!1sen!2sus!4v1614132683444!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2025 urbanhouse. All rights reserved.</p>
+      <div>
+        <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
